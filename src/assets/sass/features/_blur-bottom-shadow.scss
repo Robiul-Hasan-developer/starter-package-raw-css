@@ -1,0 +1,22 @@
+/* blur bottom shadow css start */
+.blur-bottom-shadow {
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+    bottom: 0;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    height: 100px;
+    left: 0;
+    -webkit-mask: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black)) add;
+    -webkit-mask: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%) add;
+    mask: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black)) add;
+    mask: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%) add;
+    overflow: visible;
+    position: fixed;
+    right: 0;
+    pointer-events: none;
+    z-index: 999;
+}
+
+/* blur bottom shadow css end */

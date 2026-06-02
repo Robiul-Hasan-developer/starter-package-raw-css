@@ -1,0 +1,20 @@
+/* hover common underline start */
+.hover-common-underline {
+    background-image: linear-gradient(currentColor, currentColor), linear-gradient(currentColor, currentColor);
+    background-size: 0 1px, 0 1px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s linear;
+    -webkit-transition: all 0.4s ease 0.3s ease-out;
+    -moz-transition: all 0.4s ease 0.3s ease-out;
+    -ms-transition: all 0.4s ease 0.3s ease-out;
+    -o-transition: all 0.4s ease 0.3s ease-out;
+    transition: all 0.4s ease 0.3s ease-out;
+    display: inline;
+}
+
+.hover-common-underline:hover {
+    background-size: 0 1px, 100% 1px;
+}
+
+/* hover common underline end */
