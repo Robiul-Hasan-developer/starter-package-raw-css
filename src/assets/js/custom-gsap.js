@@ -611,6 +611,84 @@ headings.forEach((heading) => {
 });
 // **************************** Text hover animation js End ****************************
 
+
+// **************************** Card stack reveal animation js start ****************************
+const cards = gsap.utils.toArray(".card-stack-reveal-item");
+
+cards.forEach((card, index) => {
+  // INITIAL STATE
+  gsap.set(card, {
+    opacity: 0,
+    scale: 0.7,
+    rotateX: -70,
+    rotateZ: index % 2 === 0 ? -8 : 8,
+    y: 150,
+    filter: "blur(10px)",
+    transformPerspective: 1200,
+    transformOrigin: "top center",
+  });
+
+  // MAIN ANIMATION
+  gsap.to(card, {
+    scrollTrigger: {
+      trigger: card,
+      start: "top 88%",
+      toggleActions: "play none none reverse",
+    },
+
+    opacity: 1,
+    scale: 1,
+    rotateX: 0,
+    rotateZ: 0,
+    y: 0,
+    filter: "blur(0px)",
+
+    duration: 1.8,
+    ease: "expo.out",
+    delay: index * 0.15,
+  });
+});
+// **************************** Card stack reveal animation js End ****************************
+
+// **************************** Magnetic hover effect js start ****************************
+const magneticCards = gsap.utils.toArray(".magnetic-item");
+
+magneticCards.forEach((magneticCard) => {
+  magneticCard.addEventListener("mousemove", (e) => {
+    const rect = magneticCard.getBoundingClientRect();
+
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const moveX = (x - rect.width / 2) * 0.12;
+    const moveY = (y - rect.height / 2) * 0.12;
+
+    gsap.to(magneticCard, {
+      x: moveX,
+      y: moveY,
+      rotateY: moveX * 0.12,
+      rotateX: -moveY * 0.12,
+      duration: 1,
+      ease: "power3.out",
+    });
+  });
+
+  magneticCard.addEventListener("mouseleave", () => {
+    gsap.to(magneticCard, {
+      x: 0,
+      y: 0,
+      rotateY: 0,
+      rotateX: 0,
+      duration: 1.4,
+      ease: "elastic.out(1, 0.4)",
+    });
+  });
+});
+// **************************** Magnetic hover effect js end ****************************
+
+
+
+
 /* **************************************************************************** 
                           Custom GSAP js start 
 ****************************************************************************  */
