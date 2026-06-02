@@ -354,6 +354,43 @@ $(function () {
 });
 // **************************** Text Reveal js Start ****************************
 
+// **************************** Text Reveal with Wave js Start ****************************
+function tp_scrollBg($wrap) {
+  $wrap = $wrap || jQuery("body");
+  $wrap.find(".text-reveal-wave").each(function () {
+    var $el = jQuery(this);
+    var tpSplit = new SplitText($el[0], { type: "words, chars" });
+    jQuery(tpSplit.words).children().first().addClass("tp-first-char");
+    gsap.fromTo(
+      tpSplit.chars,
+      {
+        position: "relative",
+        display: "inline-block",
+        opacity: 0.2,
+        x: -5,
+      },
+      {
+        opacity: 1,
+        x: 0,
+        stagger: 0.1,
+        scrollTrigger: {
+          trigger: $el[0],
+          toggleActions: "play pause reverse pause",
+          start: "top 70%",
+          end: "top 40%",
+          scrub: 0.7,
+        },
+      },
+    );
+  });
+}
+window.addEventListener("DOMContentLoaded", function () {
+  tp_scrollBg();
+});
+// **************************** Text Reveal with Wave js End ****************************
+
+
+
 /* **************************************************************************** 
                           Custom GSAP js start 
 ****************************************************************************  */
