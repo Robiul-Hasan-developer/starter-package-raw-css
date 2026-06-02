@@ -687,6 +687,23 @@ magneticCards.forEach((magneticCard) => {
 // **************************** Magnetic hover effect js end ****************************
 
 
+//**************************** fixed content js End ****************************
+mmm.add("(min-width: 992px)", () => {
+  if ($(".fixed-content-section").length > 0) {
+    ScrollTrigger.create({
+      trigger: ".fixed-content-wrapper", // পুরো row
+      start: "top top+=140", // একটু spacing adjust করতে পারো
+      end: "bottom bottom", // right content শেষ হলে stop
+      pin: ".fixed-content",
+      pinSpacing: false,
+      scrub: 1,
+      markers: false,
+    });
+  }
+});
+//**************************** fixed content js End ****************************
+
+
 
 
 /* **************************************************************************** 
