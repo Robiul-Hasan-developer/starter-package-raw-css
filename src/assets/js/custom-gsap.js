@@ -15,8 +15,7 @@ if ($("#smooth-wrapper").length && $("#smooth-content").length) {
     ignoreMobileResize: true,
   });
 }
-// **************************** Smooth Scroll js End **************************** 
-
+// **************************** Smooth Scroll js End ****************************
 
 // **************************** Custom Cursor Js Start ****************************
 var body = document.body;
@@ -115,7 +114,6 @@ document.querySelectorAll("a, button").forEach((el) => {
 });
 // **************************** Custom Cursor Js End ****************************
 
-
 // **************************** Mobile Menu js Start ****************************
 var mmm = gsap.matchMedia();
 var mtl = gsap.timeline({ paused: true });
@@ -208,12 +206,12 @@ class Button {
 
     const xTransformer = gsap.utils.pipe(
       gsap.utils.mapRange(0, width, 0, 100),
-      gsap.utils.clamp(0, 100)
+      gsap.utils.clamp(0, 100),
     );
 
     const yTransformer = gsap.utils.pipe(
       gsap.utils.mapRange(0, height, 0, 100),
-      gsap.utils.clamp(0, 100)
+      gsap.utils.clamp(0, 100),
     );
 
     return {
@@ -316,6 +314,45 @@ function parallax(e) {
   });
 }
 //**************************** Move on cursor hover js End ****************************
+
+// **************************** Text Reveal js Start ****************************
+function text_reveal() {
+  const split_2 = new SplitText(".text-reveal", { type: "lines" });
+  split_2.lines.forEach((target) => {
+    gsap.to(target, {
+      backgroundPositionX: 0,
+      ease: "none",
+      scrollTrigger: {
+        trigger: target,
+        scrub: 1,
+        start: "top 85%",
+        end: "bottom center",
+      },
+    });
+  });
+}
+
+function text_reveal_two() {
+  const split = new SplitText(".text-reveal-two", { type: "lines" });
+  split.lines.forEach((target) => {
+    gsap.to(target, {
+      backgroundPositionX: 0,
+      ease: "none",
+      scrollTrigger: {
+        trigger: target,
+        scrub: 1,
+        start: "top 85%",
+        end: "bottom center",
+      },
+    });
+  });
+}
+
+$(function () {
+  text_reveal();
+  text_reveal_two();
+});
+// **************************** Text Reveal js Start ****************************
 
 /* **************************************************************************** 
                           Custom GSAP js start 
