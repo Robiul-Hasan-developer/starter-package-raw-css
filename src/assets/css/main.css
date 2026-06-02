@@ -670,6 +670,37 @@ input[type=number] {
 }
 
 /* hover common underline end */
+/* ============================= splitTextStyleOne css start ============================= */
+.splitTextStyleOne .char {
+    display: inline-block;
+    transform-origin: left center;
+    clip-path: inset(0 100% 0 0);
+}
+
+.text-reveal > div {
+    background-image: linear-gradient(to right, #fff 50%, #383C3E 50%);
+    background-image: linear-gradient(to right, #fff 50%, #ffffff26 50%);
+    background-size: 200% 100%;
+    background-position: 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.p-0.text-reveal > div {
+    padding: 0;
+}
+
+.text-reveal-two > div {
+    background-image: linear-gradient(to right, #111013 50%, #c6c6c6 50%);
+    background-size: 200% 100%;
+    background-position: 100%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+/* ============================= splitTextStyleOne css end ============================= */
 /* ================================= Typography Css Start =========================== */
 * {
     margin: 0;

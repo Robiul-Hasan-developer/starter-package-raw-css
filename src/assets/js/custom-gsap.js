@@ -162,107 +162,24 @@ mmm.add("(max-width: 991px)", () => {
 // **************************** Mobile Menu js End ****************************
 
 // **************************** Custom Split text Js Start ****************************
-// if ($(".splitTextStyleOne").length > 0) {
-//   let character = gsap.utils.toArray(".splitTextStyleOne");
-//   character.forEach((character) => {
-//     let split_char = new SplitText(character, {
-//       type: "chars, words",
-//       lineThreshold: 0.3,
-//     });
-//     const tl2 = gsap.timeline({
-//       scrollTrigger: {
-//         trigger: character,
-//         start: "top 90%",
-//         end: "bottom 60%",
-//         scrub: false,
-//         markers: false,
-//         toggleActions: "play none none none",
-//       },
-//     });
-//     tl2.from(split_char.chars, {
-//       autoAlpha: 0,
-//       x: 40,
-//       duration: 0.3,
-//       opacity: 0,
-//       stagger: 0.03,
-//       ease: "back.out(1.7)",
-//     });
-//   });
-// }
+document.querySelectorAll(".splitTextStyleOne").forEach((title) => {
+  const split = new SplitText(title, { type: "chars" });
 
-if ($(".splitTextStyleOne").length) {
-  let staggerAmount = 0.03,
-    translateXValue = 20,
-    delayValue = 0.1,
-    easeType = "power2.out",
-    animatedTextElements = document.querySelectorAll(".splitTextStyleOne");
+  split.chars.forEach((char) => char.classList.add("char"));
 
-  animatedTextElements.forEach((element) => {
-    let animationSplitText = new SplitText(element, { type: "chars, words" });
-    gsap.from(animationSplitText.chars, {
-      duration: 1,
-      delay: delayValue,
-      x: translateXValue,
-      autoAlpha: 0,
-      stagger: staggerAmount,
-      ease: easeType,
-      scrollTrigger: { trigger: element, start: "top 85%" },
-    });
+  gsap.to(split.chars, {
+    scrollTrigger: {
+      trigger: title,
+      start: "top 80%",
+    },
+    duration: 0.8,
+    clipPath: "inset(0% 0% 0% 0%)",
+    x: 0,
+    opacity: 1,
+    ease: "power4.out",
+    stagger: 0.03,
   });
-}
-
-if ($(".splitTextStyleTwo").length) {
-  let animatedTextElements = document.querySelectorAll(".splitTextStyleTwo");
-
-  animatedTextElements.forEach((element) => {
-    //Reset if needed
-    if (element.animation) {
-      element.animation.progress(1).kill();
-      element.split.revert();
-    }
-
-    element.split = new SplitText(element, {
-      type: "lines,words,chars",
-      linesClass: "split-line",
-    });
-    gsap.set(element, { perspective: 400 });
-
-    gsap.set(element.split.chars, {
-      opacity: 0,
-      x: "50",
-    });
-
-    element.animation = gsap.to(element.split.chars, {
-      scrollTrigger: { trigger: element, start: "top 90%" },
-      x: "0",
-      y: "0",
-      rotateX: "0",
-      opacity: 1,
-      duration: 1,
-      ease: Back.easeOut,
-      stagger: 0.02,
-    });
-  });
-}
-
-if ($(".splitTextStyleThree").length) {
-  let staggerAmount = 0.05,
-    translateXValue = 0,
-    delayValue = 0.5,
-    animatedTextElements = document.querySelectorAll(".splitTextStyleThree");
-
-  animatedTextElements.forEach((element) => {
-    let animationSplitText = new SplitText(element, { type: "chars, words" });
-    gsap.from(animationSplitText.words, {
-      duration: 1,
-      delay: delayValue,
-      x: 20,
-      autoAlpha: 0,
-      stagger: staggerAmount,
-      scrollTrigger: { trigger: element, start: "top 85%" },
-    });
-  });
-}
+});
 // **************************** Custom Split text Js End ****************************
 
 // **************************** Position Aware button hover js start ****************************
@@ -387,6 +304,18 @@ if ($(".split-reveal").length) {
   });
 }
 // **************************** split Reveal js End ****************************
+
+//**************************** Move on cursor hover js Start ****************************
+document.addEventListener("mousemove", parallax);
+function parallax(e) {
+  document.querySelectorAll(".move-on-cursor-hover").forEach(function (move) {
+    var movingValue = move.getAttribute("data-value");
+    var x = (e.clientX * movingValue) / 250;
+    var y = (e.clientY * movingValue) / 250;
+    move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+  });
+}
+//**************************** Move on cursor hover js End ****************************
 
 /* **************************************************************************** 
                           Custom GSAP js start 
