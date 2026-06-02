@@ -5,18 +5,17 @@
 var tl = gsap.timeline();
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
-// **************************** Nav Menu js Start ****************************
-// let mm = gsap.matchMedia();
-
-// mm.add("(min-width: 992px)", () => {
-//   gsap.from('.nav-menu__item', {
-//     opacity: 0,
-//     duration: .4,
-//     y: -20,
-//     stagger: .12,
-//   });
-// });
-// **************************** Nav Menu js End ****************************
+// **************************** Smooth Scroll js Start ****************************
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
+if ($("#smooth-wrapper").length && $("#smooth-content").length) {
+  ScrollSmoother.create({
+    smooth: 2.35,
+    effects: true,
+    smoothTouch: 0.15,
+    ignoreMobileResize: true,
+  });
+}
+// **************************** Smooth Scroll js End **************************** 
 
 // **************************** Custom Cursor Js Start ****************************
 var body = document.body;
