@@ -17,6 +17,7 @@ if ($("#smooth-wrapper").length && $("#smooth-content").length) {
 }
 // **************************** Smooth Scroll js End **************************** 
 
+
 // **************************** Custom Cursor Js Start ****************************
 var body = document.body;
 var cursor = document.querySelector(".cursor");
@@ -24,6 +25,7 @@ var dot = document.querySelector(".dot");
 var cursorSmalls = document.querySelectorAll(".cursor-small");
 var cursorBigs = document.querySelectorAll(".cursor-big");
 
+// Move cursor
 body.addEventListener("mousemove", function (event) {
   gsap.to(cursor, {
     x: event.x,
@@ -33,9 +35,7 @@ body.addEventListener("mousemove", function (event) {
     visibility: "visible",
     ease: "expo.out",
   });
-});
 
-body.addEventListener("mousemove", function (event) {
   gsap.to(dot, {
     x: event.x,
     y: event.y,
@@ -53,8 +53,8 @@ cursorSmalls.forEach((cursorSmall) => {
       backgroundColor: "#fff",
     });
     gsap.to(cursor, {
-      visibility: "hidden",
       opacity: 0,
+      visibility: "hidden",
     });
   });
 
@@ -64,8 +64,8 @@ cursorSmalls.forEach((cursorSmall) => {
       backgroundColor: "#fff",
     });
     gsap.to(cursor, {
-      visibility: "visible",
       opacity: 1,
+      visibility: "visible",
     });
   });
 });
@@ -78,8 +78,8 @@ cursorBigs.forEach((cursorBig) => {
       backgroundColor: "#fff",
     });
     gsap.to(cursor, {
-      visibility: "hidden",
       opacity: 0,
+      visibility: "hidden",
     });
   });
 
@@ -89,12 +89,32 @@ cursorBigs.forEach((cursorBig) => {
       backgroundColor: "#fff",
     });
     gsap.to(cursor, {
-      visibility: "visible",
       opacity: 1,
+      visibility: "visible",
+    });
+  });
+});
+
+// 🔥 NEW: Hide cursor on a, button hover
+document.querySelectorAll("a, button").forEach((el) => {
+  el.addEventListener("mouseenter", function () {
+    gsap.to([cursor, dot], {
+      scale: 0,
+      duration: 0.3,
+      ease: "power2.out",
+    });
+  });
+
+  el.addEventListener("mouseleave", function () {
+    gsap.to([cursor, dot], {
+      scale: 1,
+      duration: 0.3,
+      ease: "power2.out",
     });
   });
 });
 // **************************** Custom Cursor Js End ****************************
+
 
 // **************************** Mobile Menu js Start ****************************
 var mmm = gsap.matchMedia();
