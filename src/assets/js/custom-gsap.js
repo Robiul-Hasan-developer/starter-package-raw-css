@@ -481,6 +481,135 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 //**************************** clip animation image js End ****************************
 
+// **************************** Title Animation js start ****************************
+if (document.querySelector(".animated-title")) {
+  gsap.set(".animated-title", {
+    opacity: 0,
+  });
+  gsap.to(".animated-title", {
+    opacity: 1,
+    duration: 1,
+    ease: "power1.out",
+    scrollTrigger: {
+      trigger: ".animated-title",
+      start: "top 80%",
+      toggleActions: "play none none none",
+      once: true,
+    },
+    onComplete: runAnimation,
+  });
+  function runAnimation() {
+    const mySplitText = new SplitText(".animated-title", {
+      type: "words,chars",
+    });
+    const chars = mySplitText.chars;
+    const cta = gsap.timeline({ repeat: -1, delay: 0.5 });
+    cta.to(chars, {
+      duration: 0.5,
+      scaleY: 0.6,
+      ease: "power1.out",
+      stagger: 0.04,
+      transformOrigin: "center bottom",
+    });
+    cta.to(
+      chars,
+      {
+        yPercent: -20,
+        ease: "elastic.out(1, 0.3)",
+        stagger: 0.03,
+        duration: 0.8,
+      },
+      0.5,
+    );
+    cta.to(
+      chars,
+      {
+        scaleY: 1,
+        ease: "elastic.out(1, 0.3)",
+        stagger: 0.03,
+        duration: 1.5,
+      },
+      0.5,
+    );
+    cta.to(
+      chars,
+      {
+        onStart: () => {
+          chars.forEach((char) => char.classList.add("char-animated"));
+        },
+      },
+      0.5,
+    );
+    cta.to(
+      chars,
+      {
+        yPercent: 0,
+        ease: "back.out(1.7)",
+        stagger: 0.03,
+        duration: 0.8,
+      },
+      0.7,
+    );
+    cta.to(chars, {
+      onStart: () => {
+        chars.forEach((char) => char.classList.remove("char-animated"));
+      },
+    });
+  }
+}
+// **************************** Title Animation js End ****************************
+
+// **************************** Text hover animation js End ****************************
+const headings = document.querySelectorAll(".text-hover-animation-scale");
+headings.forEach((heading) => {
+  const textNodes = [];
+
+  heading.childNodes.forEach((node) => {
+    if (node.nodeType === Node.TEXT_NODE) {
+      node.textContent.split(" ").forEach((word, index, array) => {
+        const wordSpan = document.createElement("span");
+        wordSpan.classList.add("top-word-span");
+        word.split("").forEach((letter) => {
+          const letterSpan = document.createElement("span");
+          letterSpan.classList.add("top-text-span");
+          letterSpan.textContent = letter;
+          wordSpan.appendChild(letterSpan);
+        });
+        textNodes.push(wordSpan);
+        if (index < array.length - 1) {
+          textNodes.push(document.createTextNode(" "));
+        }
+      });
+    } else if (node.nodeType === Node.ELEMENT_NODE) {
+      textNodes.push(node.cloneNode(true));
+    }
+  });
+
+  heading.innerHTML = "";
+  textNodes.forEach((node) => heading.appendChild(node));
+
+  const letters = heading.querySelectorAll(".top-text-span");
+  letters.forEach((letter) => {
+    $(letter).on("mouseenter", () => {
+      gsap.to(letter, {
+        scaleY: 1.3,
+        y: "-14%",
+        duration: 0.2,
+        ease: "sine",
+      });
+    });
+
+    $(letter).on("mouseleave", () => {
+      gsap.to(letter, {
+        scaleY: 1,
+        y: "0%",
+        duration: 0.2,
+        ease: "sine",
+      });
+    });
+  });
+});
+// **************************** Text hover animation js End ****************************
 
 /* **************************************************************************** 
                           Custom GSAP js start 
