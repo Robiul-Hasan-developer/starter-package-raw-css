@@ -136,5 +136,30 @@
 }
 
 /* Submenu End */
+
+/* Nav menu css Start */
+.nav-menu__link {
+  color: hsl(var(--heading-color));
+}
+
+.has-submenu .nav-menu__link {
+  padding-inline-end: 24px;
+  padding-block: 24px;
+}
+
+.nav-submenu {
+    z-index: 99;
+}
+
+.nav-submenu__link {
+  color: hsl(var(--heading-color));
+  &:hover {
+    background-color: var(--neutral-100);
+  }
+}
+
+/* Nav menu css End */
+
+
 /* Header Menu and Submenu Css End */
 /* ================================= Header Css End =========================== */
