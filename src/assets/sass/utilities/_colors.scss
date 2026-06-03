@@ -1,0 +1,9 @@
+.text-heading {
+    color: hsl(var(--heading-color));
+}
+
+.hover-text-main-600 {
+    &:hover {
+        color: var(--main-600);
+    }
+}
