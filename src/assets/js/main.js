@@ -230,26 +230,27 @@
     });
     // ========================= Form Submit Js End ===================
 
-    // ================== Password Show Hide Js Start ==========
-    $(".toggle-password").on("click", function () {
-      $(this).toggleClass("active");
-      var input = $($(this).attr("id"));
-      if (input.attr("type") == "password") {
-        input.attr("type", "text");
-        $(this).removeClass("ph-bold ph-eye-closed");
-        $(this).addClass("ph-bold ph-eye");
-      } else {
-        input.attr("type", "password");
-        $(this).addClass("ph-bold ph-eye-closed");
-      }
-    });
-    // ========================= Password Show Hide Js End ===========================
-
     // ========================= AOS Js Start ===========================
     AOS.init({
       once: true,
     });
     // ========================= AOS Js End ===========================
+    
+    // // ================== Password Show Hide Js Start ==========
+    // $(".toggle-password").on("click", function () {
+    //   $(this).toggleClass("active");
+    //   var input = $($(this).attr("id"));
+    //   if (input.attr("type") == "password") {
+    //     input.attr("type", "text");
+    //     $(this).removeClass("ph-bold ph-eye-closed");
+    //     $(this).addClass("ph-bold ph-eye");
+    //   } else {
+    //     input.attr("type", "password");
+    //     $(this).addClass("ph-bold ph-eye-closed");
+    //   }
+    // });
+    // // ========================= Password Show Hide Js End ===========================
+
 
     // // ================================= Brand slider Start =========================
     // var brandSlider = new Swiper('.brand-slider', {
