@@ -899,6 +899,14 @@ input:focus, input:focus-visible {
 }
 
 /* ================================= Typography Css End =========================== */
+.text-heading {
+    color: hsl(var(--heading-color));
+}
+
+.hover-text-main-600:hover {
+    color: var(--main-600);
+}
+
 /* Bg Image Css Start */
 .bg-img {
     background-size: cover;
@@ -1633,7 +1641,7 @@ input:focus, input:focus-visible {
     backdrop-filter: blur(32px);
     animation: slideDown 0.35s ease-out;
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
-    background-color: #ffffffd4;
+    background-color: #ffffffe9;
 }
 
 @media screen and (max-width: 991px) {
