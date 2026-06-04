@@ -89,7 +89,7 @@ $font-sizes: (
   
   /* Font Size Variable Start */
   --heading-one: clamp(2rem, -0.0733rem + 6.3692vw, 4.25rem); // Min:32px - Max:68px
-  --heading-two: clamp(1.75rem, 0.7133rem + 2.8846vw, 2.875rem); // Min: 28px - Max: 46px
+  --heading-two: clamp(1.75rem, 0.7133rem + 3.8846vw, 2.875rem); // Min: 28px - Max: 46px
   --heading-three: clamp(1.5rem, 0.3353rem + 2.1661vw, 2.5rem); // Min: 24px - Max: 40px
   --heading-four: clamp(1.25rem, 0.5569rem + 1.444vw, 2rem); // Min: 20px - Max: 32px
   --heading-five: clamp(1.125rem, 1.2rem + 0.722vw, 1.75rem); // Min: 18px - Max: 28px
@@ -114,9 +114,6 @@ $font-sizes: (
   
   --heading-color: var(--black);
   --body-color: var(--body);
-
-  --translate-x-50: translateX(-50%); 
-  --translate-y-50: translateY(-50%); 
     
   // spacing
   @each $property, $value in $spaces {

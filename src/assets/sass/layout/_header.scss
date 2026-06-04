@@ -109,7 +109,8 @@
 
 /* Submenu Start */
 .nav-submenu {
-  box-shadow: 0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;
+  border-radius: 8px;
+  box-shadow: 0 7px 35px -7px #0000001a, 0 4px 6px -4px #0000000d;
   min-width: 190px;
   visibility: hidden;
   opacity: 0;
@@ -180,10 +181,17 @@
 }
 
 .toggle-mobileMenu {
-    font-size: 36px;
+  font-size: 36px;
+}
+
+
+.nav-submenu__link {
+  border-radius: 6px;
 }
 
 /* Nav menu css End */
+
+
 
 
 /* Header Menu and Submenu Css End */

@@ -6,7 +6,6 @@
    * Author-url: https://themeforest.net/user/wowtheme7 */
 /* **************************** Abstracts ****************************
    ** Functions
-   ** Mixins
    ** Variables
 
    /* **************************** Components **************************** 
@@ -81,7 +80,7 @@
     --body-font: "Poppins", sans-serif;
   /* Font Size Variable Start */
     --heading-one: clamp(2rem, -0.0733rem + 6.3692vw, 4.25rem);
-    --heading-two: clamp(1.75rem, 0.7133rem + 2.8846vw, 2.875rem);
+    --heading-two: clamp(1.75rem, 0.7133rem + 3.8846vw, 2.875rem);
     --heading-three: clamp(1.5rem, 0.3353rem + 2.1661vw, 2.5rem);
     --heading-four: clamp(1.25rem, 0.5569rem + 1.444vw, 2rem);
     --heading-five: clamp(1.125rem, 1.2rem + 0.722vw, 1.75rem);
@@ -102,8 +101,6 @@
     --body: 0 0% 43%;
     --heading-color: var(--black);
     --body-color: var(--body);
-    --translate-x-50: translateX(-50%);
-    --translate-y-50: translateY(-50%);
     --size-05: rem(2px);
     --size-1: rem(4px);
     --size-105: rem(6px);
@@ -1718,7 +1715,8 @@ input:focus, input:focus-visible {
 
 /* Submenu Start */
 .nav-submenu {
-    box-shadow: 0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;
+    border-radius: 8px;
+    box-shadow: 0 7px 35px -7px #0000001a, 0 4px 6px -4px #0000000d;
     min-width: 190px;
     visibility: hidden;
     opacity: 0;
@@ -1785,6 +1783,10 @@ input:focus, input:focus-visible {
     font-size: 36px;
 }
 
+.nav-submenu__link {
+    border-radius: 6px;
+}
+
 /* Nav menu css End */
 /* Header Menu and Submenu Css End */
 /* ================================= Header Css End =========================== */
@@ -1835,6 +1837,11 @@ input:focus, input:focus-visible {
     height: 320px;
     object-fit: cover;
     object-position: top;
+}
+
+.mega-menu-item__thumb {
+    border-radius: 12px;
+    border: 1px solid #00000017;
 }
 
 /* Mega menu css end */
@@ -2033,34 +2040,6 @@ input:focus, input:focus-visible {
     margin-left: 0;
 }
 
-[dir=rtl] .tw-translate-x-50 {
-    transform: translateX(50%);
-}
-
-[dir=rtl] .select-domain {
-    margin-inline-end: 0;
-}
-
-[dir=rtl] .pricing-plan .form-check {
-    padding-left: 0 !important;
-}
-
-[dir=rtl] .common-check-two .form-check-input::before {
-    transform: translate(50%, -50%);
-}
-
-[dir=rtl] .distraction-icon.seven {
-    transform: translate(50%, -50%);
-}
-
-[dir=rtl] .translate-middle-x {
-    transform: translateX(50%) !important;
-}
-
-[dir=rtl] .translate-x-100-16 {
-    transform: translateX(calc(100% - 105px));
-}
-
 [dir=rtl] .toast-message {
     transform: translateX(-110%);
 }
@@ -2069,36 +2048,12 @@ input:focus, input:focus-visible {
     transform: translateX(0) !important;
 }
 
-[dir=rtl] .arrow-long {
-    transform: scaleX(-1);
-}
-
 [dir=rtl] .common-check .form-check-input::before {
     transform: translate(50%, -50%);
 }
 
 [dir=rtl] .form-check .form-check-input {
     margin-right: -1.5em;
-}
-
-[dir=rtl] .top-features-slider {
-    direction: rtl;
-}
-
-[dir=rtl] .left-right-gradient::before {
-    background: linear-gradient(-90deg, #fff, transparent);
-}
-
-[dir=rtl] .left-right-gradient::after {
-    background: linear-gradient(-90deg, transparent, #ffffff);
-}
-
-[dir=rtl] .tw--translate-x-full {
-    transform: translateX(100%);
-}
-
-[dir=rtl] .image-animation:after {
-    transform: translate(50%, -50%) rotate(-45deg);
 }
 
 [dir=rtl] .ph-bold.ph-caret-right:before {
