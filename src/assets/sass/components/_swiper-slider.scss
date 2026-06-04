@@ -1,0 +1,102 @@
+/* Active slider animation css start */
+.active-slider-animate-little-updown {
+    transform: translateY(40px);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.active-slider-animate-scalation {
+    transform: scale(0.9);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.active-slider-animate-updown {
+    transform: translateY(60%);
+    visibility: hidden;
+    opacity: 0;
+    transition-duration: 900ms !important;
+}
+
+.transition-bounce {
+    transition: cubic-bezier(0.34, 1.44, 0.64, 1);
+}
+
+.animated-slider-wrapper .swiper-slide {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.1s;
+}
+
+.animated-slider-wrapper .swiper-slide-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.animated-slider-wrapper .swiper-slide-active .transition-delay-02 {
+    transition-delay: 0.2s !important;
+}
+
+.animated-slider-wrapper .swiper-slide-active .transition-delay-03 {
+    transition-delay: 0.3s !important;
+}
+
+.animated-slider-wrapper .swiper-slide-active .transition-delay-04 {
+    transition-delay: 0.4s !important;
+}
+
+.animated-slider-wrapper .swiper-slide-active .transition-delay-05 {
+    transition-delay: 0.5s !important;
+}
+
+.animated-slider-wrapper .swiper-slide-active .transition-delay-06 {
+    transition-delay: 0.6s !important;
+}
+
+.animated-slider-wrapper .swiper-slide-active .transition-delay-07 {
+    transition-delay: 0.7s !important;
+}
+
+.animated-slider-wrapper .swiper-slide-active .transition-delay-08 {
+    transition-delay: 0.8s !important;
+}
+
+.animated-slider-wrapper .swiper-slide-active .transition-delay-09 {
+    transition-delay: 0.9s !important;
+}
+
+.animated-slider-wrapper .swiper-slide-active .transition-delay-1 {
+    transition-delay: 1s !important;
+}
+
+.animated-slider-wrapper .swiper-slide-active .transition-delay-12 {
+    transition-delay: 1.2s !important;
+}
+
+.animated-slider-wrapper .swiper-slide-active .transition-delay-105 {
+    transition-delay: 1.5s !important;
+}
+
+.animated-slider-wrapper .swiper-slide-active .transition-delay-2 {
+    transition-delay: 2s !important;
+}
+
+.animated-slider-wrapper .swiper-slide-active .active-slider-animate-little-updown {
+    transform: translateY(0px);
+    visibility: visible;
+    opacity: 1;
+}
+
+.animated-slider-wrapper .swiper-slide-active .active-slider-animate-scalation {
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
+}
+
+.animated-slider-wrapper .swiper-slide-active .active-slider-animate-updown {
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Active slider animation css end */
