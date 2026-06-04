@@ -53,4 +53,28 @@
         }
     }
 }
+
+.nav-menu--mobile {
+    margin-top: 32px;
+}
+
+
+.mobile-menu {
+    width: 300px;
+    height: 100vh;
+    z-index: 999;
+    transform: translateX(-100%);
+    padding-bottom: 68px;
+}
+
+.close-button {
+    font-size: 28px;
+}
+
+@media (max-width: 991px) {
+    .nav-menu__link {
+        width: 100%;
+    }
+}
+
 /* Mobile Menu Sidebar Start */

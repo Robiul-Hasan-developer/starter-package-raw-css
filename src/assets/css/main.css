@@ -1773,6 +1773,10 @@ input:focus, input:focus-visible {
     color: var(--main-600);
 }
 
+.toggle-mobileMenu {
+    font-size: 36px;
+}
+
 /* Nav menu css End */
 /* Header Menu and Submenu Css End */
 /* ================================= Header Css End =========================== */
@@ -1870,6 +1874,27 @@ input:focus, input:focus-visible {
     display: none;
 }
 
+.nav-menu--mobile {
+    margin-top: 32px;
+}
+
+.mobile-menu {
+    width: 300px;
+    height: 100vh;
+    z-index: 999;
+    transform: translateX(-100%);
+    padding-bottom: 68px;
+}
+
+.close-button {
+    font-size: 28px;
+}
+
+@media (max-width: 991px) {
+    .nav-menu__link {
+        width: 100%;
+    }
+}
 /* Mobile Menu Sidebar Start */
 /* ===================== Scroll to Top Start ================================= */
 .progress-wrap {
