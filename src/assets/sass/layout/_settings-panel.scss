@@ -1,5 +1,22 @@
 /* ========================== Settings panel css start =========================== */
 .settings-button {
+  width: 48px;
+  height: 48px;
+  background-color: var(--main-600);
+  transition: .2s;
+  color: #fff;
+}
+
+.setting-icon,
+.close-icon {
+  font-size: 24px;
+  line-height: normal;
+  width: 24px;
+  height: 24px;
+}
+
+
+.settings-button {
   pointer-events: all;
 
   .close-icon {
@@ -21,6 +38,7 @@
   inset-inline-end: -280px;
   pointer-events: none;
   transition: 0.3s;
+  z-index: 9999;
 
   &.active {
     inset-inline-end: 0px !important;
@@ -45,6 +63,22 @@
       background-color: var(--main-600) !important;
     }
   }
+}
+
+.settings-panel__button {
+  background-color: var(--main-100);
+  color: var(--main-600);
+  transition: .5s;
+}
+
+.settings-panel__button.active {
+  color: #fff;
+}
+
+.settings-panel__content {
+  padding-block: 52px;
+  padding-inline: 24px;
+  gap: 40px;
 }
 
 .remove-animate-cursor {

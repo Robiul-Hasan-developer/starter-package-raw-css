@@ -33,44 +33,38 @@
   <!--==================== Preloader End ====================-->
 
   <!-- ========================== Settings Panel start ==================================== -->
-<div class="settings-panel position-fixed top-50 translate-middle-y tw-z-999 d-flex align-items-center">
-  <button type="button"
-    class="settings-button tw-w-12 tw-h-12 bg-main-600 text-white hover-bg-main-800 tw-duration-100 d-flex justify-content-center align-items-center">
-    <i class="ph-fill ph-gear-six setting-icon tw-text-2xl tw-leading-none animation-rotate tw-w-6 tw-h-6"></i>
-    <i class="ph-bold ph-x close-icon tw-text-2xl tw-leading-none tw-w-6 tw-h-6"></i>
+<div class="settings-panel position-fixed top-50 translate-middle-y d-flex align-items-center">
+  <button type="button" class="settings-button d-flex justify-content-center align-items-center">
+    <i class="ph-fill ph-gear-six setting-icon animation-rotate"></i>
+    <i class="ph-bold ph-x close-icon"></i>
   </button>
 
-  <div class="settings-panel__content bg-white tw-px-6 tw-py-13 d-flex flex-column tw-gap-10 scroll-sm overflow-y-auto">
-    <div class="d-flex flex-column tw-gap-10">
-      <div class="">
-        <h6 class="settings-panel__title text-center tw-mb-6 text-uppercase">
-          Cursor
-        </h6>
-        <div class="settings-panel__buttons cursor__buttons d-flex tw-gap-4">
-          <button type="button"
-            class="settings-panel__button cursor-animate bg-main-two-600 hover-bg-main-600 tw-duration-300 text-white tw-text-base tw-py-305 tw-px-3 fw-medium active-scale-094 flex-grow-1 active">
-            Animate
-          </button>
-          <button type="button"
-            class="settings-panel__button cursor-default bg-main-two-600 hover-bg-main-600 tw-duration-300 text-white tw-text-base tw-py-305 tw-px-3 fw-medium active-scale-094 flex-grow-1">
-            Default
-          </button>
-        </div>
+  <div class="settings-panel__content bg-white px-4 d-flex flex-column scroll-sm overflow-y-auto">
+    <div class="">
+      <h6 class="settings-panel__title text-center mb-4 text-uppercase">
+        Cursor
+      </h6>
+      <div class="settings-panel__buttons cursor__buttons d-flex gap-3">
+        <button type="button"
+          class="settings-panel__button cursor-animatetext-white py-3 px-3 fw-medium flex-grow-1 active">
+          Animate
+        </button>
+        <button type="button" class="settings-panel__button cursor-defaulttext-white py-3 px-3 fw-medium flex-grow-1">
+          Default
+        </button>
       </div>
-      <div class="">
-        <h6 class="settings-panel__title text-center tw-mb-6 text-uppercase">
-          Direction
-        </h6>
-        <div class="settings-panel__buttons d-flex tw-gap-4">
-          <button type="button"
-            class="settings-panel__button direction-ltr bg-main-two-600 hover-bg-main-600 tw-duration-300 text-white tw-text-base tw-py-305 tw-px-3 fw-medium active-scale-094 flex-grow-1 active">
-            LTR
-          </button>
-          <button type="button"
-            class="settings-panel__button direction-rtl bg-main-two-600 hover-bg-main-600 tw-duration-300 text-white tw-text-base tw-py-305 tw-px-3 fw-medium active-scale-094 flex-grow-1">
-            RTL
-          </button>
-        </div>
+    </div>
+    <div class="">
+      <h6 class="settings-panel__title text-center mb-4 text-uppercase">
+        Direction
+      </h6>
+      <div class="settings-panel__buttons d-flex gap-3">
+        <button type="button" class="settings-panel__button direction-ltr py-3 px-3 fw-medium flex-grow-1 active">
+          LTR
+        </button>
+        <button type="button" class="settings-panel__button direction-rtl py-3 px-3 fw-medium flex-grow-1">
+          RTL
+        </button>
       </div>
     </div>
   </div>
@@ -127,15 +121,13 @@
     <a href="javascript:void(0)" class="nav-menu__link">Home</a>
 
     <!-- mega menu start -->
-<div
-  class="mega-menu scroll-sm nav-submenu position-absolute start-0 top-100 tw-w-max bg-white">
+<div class="mega-menu scroll-sm nav-submenu position-absolute start-0 top-100 tw-w-max bg-white">
   <div class="row g-4 row-cols-1 row-cols-lg-3 row-cols-xl-4">
     <div class="col">
       <div class="mega-menu-item group-item">
-        <div class="position-relative border border-neutral-200 rounded overflow-hidden">
+        <div class="position-relative border border-neutral-200 rounded-4 overflow-hidden">
           <a href="index.html" class="d-block">
-            <img src="assets/images/thumbs/home-img1.png" alt="Home Page Image"
-              class="mega-menu__img w-100">
+            <img src="assets/images/thumbs/home-img1.png" alt="Home Page Image" class="mega-menu__img w-100">
           </a>
           <div class="d-lg-flex d-none">
             <div
@@ -153,17 +145,15 @@
           </div>
         </div>
         <div class="tw-mt-4 text-center">
-          <a href="index.html"
-            class="mega-menu__link fw-semibold text-capitalize mt-2">SEO Agency</a>
+          <a href="index.html" class="mega-menu__link fw-semibold text-capitalize mt-2">SEO Agency</a>
         </div>
       </div>
     </div>
     <div class="col">
       <div class="mega-menu-item group-item">
-        <div class="position-relative border border-neutral-200 rounded overflow-hidden">
+        <div class="position-relative border border-neutral-200 rounded-4 overflow-hidden">
           <a href="index-2.html" class="d-block">
-            <img src="assets/images/thumbs/home-img2.png" alt="Home Page Image"
-              class="mega-menu__img w-100">
+            <img src="assets/images/thumbs/home-img2.png" alt="Home Page Image" class="mega-menu__img w-100">
           </a>
           <div class="d-lg-flex d-none">
             <div
@@ -181,17 +171,15 @@
           </div>
         </div>
         <div class="tw-mt-4 text-center">
-          <a href="index-2.html"
-            class="mega-menu__link fw-semibold text-capitalize mt-2">Web Hosting</a>
+          <a href="index-2.html" class="mega-menu__link fw-semibold text-capitalize mt-2">Web Hosting</a>
         </div>
       </div>
     </div>
     <div class="col">
       <div class="mega-menu-item group-item">
-        <div class="position-relative border border-neutral-200 rounded overflow-hidden">
+        <div class="position-relative border border-neutral-200 rounded-4 overflow-hidden">
           <a href="index-3.html" class="d-block">
-            <img src="assets/images/thumbs/home-img3.png" alt="Home Page Image"
-              class="mega-menu__img w-100">
+            <img src="assets/images/thumbs/home-img3.png" alt="Home Page Image" class="mega-menu__img w-100">
           </a>
           <div class="d-lg-flex d-none">
             <div
@@ -209,18 +197,16 @@
           </div>
         </div>
         <div class="tw-mt-4 text-center">
-          <a href="index-3.html"
-            class="mega-menu__link fw-semibold text-capitalize mt-2">Task
+          <a href="index-3.html" class="mega-menu__link fw-semibold text-capitalize mt-2">Task
             Management</a>
         </div>
       </div>
     </div>
     <div class="col">
       <div class="mega-menu-item group-item">
-        <div class="position-relative border border-neutral-200 rounded overflow-hidden">
+        <div class="position-relative border border-neutral-200 rounded-4 overflow-hidden">
           <a href="index-4.html" class="d-block">
-            <img src="assets/images/thumbs/home-img4.png" alt="Home Page Image"
-              class="mega-menu__img w-100">
+            <img src="assets/images/thumbs/home-img4.png" alt="Home Page Image" class="mega-menu__img w-100">
           </a>
           <div class="d-lg-flex d-none">
             <div
@@ -238,18 +224,16 @@
           </div>
         </div>
         <div class="tw-mt-4 text-center">
-          <a href="index-4.html"
-            class="mega-menu__link fw-semibold text-capitalize mt-2">CRM
+          <a href="index-4.html" class="mega-menu__link fw-semibold text-capitalize mt-2">CRM
             Software</a>
         </div>
       </div>
     </div>
     <div class="col">
       <div class="mega-menu-item group-item">
-        <div class="position-relative border border-neutral-200 rounded overflow-hidden">
+        <div class="position-relative border border-neutral-200 rounded-4 overflow-hidden">
           <a href="index-5.html" class="d-block">
-            <img src="assets/images/thumbs/home-img5.png" alt="Home Page Image"
-              class="mega-menu__img w-100">
+            <img src="assets/images/thumbs/home-img5.png" alt="Home Page Image" class="mega-menu__img w-100">
           </a>
           <div class="d-lg-flex d-none">
             <div
@@ -267,17 +251,15 @@
           </div>
         </div>
         <div class="tw-mt-4 text-center">
-          <a href="index-5.html"
-            class="mega-menu__link fw-semibold text-capitalize mt-2">App Landing</a>
+          <a href="index-5.html" class="mega-menu__link fw-semibold text-capitalize mt-2">App Landing</a>
         </div>
       </div>
     </div>
     <div class="col">
       <div class="mega-menu-item group-item">
-        <div class="position-relative border border-neutral-200 rounded overflow-hidden">
+        <div class="position-relative border border-neutral-200 rounded-4 overflow-hidden">
           <a href="index-6.html" class="d-block">
-            <img src="assets/images/thumbs/home-img6.png" alt="Home Page Image"
-              class="mega-menu__img w-100">
+            <img src="assets/images/thumbs/home-img6.png" alt="Home Page Image" class="mega-menu__img w-100">
           </a>
           <div class="d-lg-flex d-none">
             <div
@@ -295,18 +277,16 @@
           </div>
         </div>
         <div class="tw-mt-4 text-center">
-          <a href="index-6.html"
-            class="mega-menu__link fw-semibold text-capitalize mt-2">Consulting
+          <a href="index-6.html" class="mega-menu__link fw-semibold text-capitalize mt-2">Consulting
             Agency</a>
         </div>
       </div>
     </div>
     <div class="col">
       <div class="mega-menu-item group-item">
-        <div class="position-relative border border-neutral-200 rounded overflow-hidden">
+        <div class="position-relative border border-neutral-200 rounded-4 overflow-hidden">
           <a href="index-7.html" class="d-block">
-            <img src="assets/images/thumbs/home-img7.png" alt="Home Page Image"
-              class="mega-menu__img w-100">
+            <img src="assets/images/thumbs/home-img7.png" alt="Home Page Image" class="mega-menu__img w-100">
           </a>
           <div class="d-lg-flex d-none">
             <div
@@ -324,18 +304,16 @@
           </div>
         </div>
         <div class="tw-mt-4 text-center">
-          <a href="index-7.html"
-            class="mega-menu__link fw-semibold text-capitalize mt-2">Advertising
+          <a href="index-7.html" class="mega-menu__link fw-semibold text-capitalize mt-2">Advertising
             Agency</a>
         </div>
       </div>
     </div>
     <div class="col">
       <div class="mega-menu-item group-item">
-        <div class="position-relative border border-neutral-200 rounded overflow-hidden">
+        <div class="position-relative border border-neutral-200 rounded-4 overflow-hidden">
           <a href="index-8.html" class="d-block">
-            <img src="assets/images/thumbs/home-img8.png" alt="Home Page Image"
-              class="mega-menu__img w-100">
+            <img src="assets/images/thumbs/home-img8.png" alt="Home Page Image" class="mega-menu__img w-100">
           </a>
           <div class="d-lg-flex d-none">
             <div
@@ -353,18 +331,16 @@
           </div>
         </div>
         <div class="tw-mt-4 text-center">
-          <a href="index-8.html"
-            class="mega-menu__link fw-semibold text-capitalize mt-2">Statup
+          <a href="index-8.html" class="mega-menu__link fw-semibold text-capitalize mt-2">Statup
             Agency</a>
         </div>
       </div>
     </div>
     <div class="col">
       <div class="mega-menu-item group-item">
-        <div class="position-relative border border-neutral-200 rounded overflow-hidden">
+        <div class="position-relative border border-neutral-200 rounded-4 overflow-hidden">
           <a href="index-9.html" class="d-block">
-            <img src="assets/images/thumbs/home-img2.png" alt="Home Page Image"
-              class="mega-menu__img w-100">
+            <img src="assets/images/thumbs/home-img2.png" alt="Home Page Image" class="mega-menu__img w-100">
           </a>
           <div class="d-lg-flex d-none">
             <div
@@ -382,18 +358,16 @@
           </div>
         </div>
         <div class="tw-mt-4 text-center">
-          <a href="index-9.html"
-            class="mega-menu__link fw-semibold text-capitalize mt-2">Corporate
+          <a href="index-9.html" class="mega-menu__link fw-semibold text-capitalize mt-2">Corporate
             Agency</a>
         </div>
       </div>
     </div>
     <div class="col">
       <div class="mega-menu-item group-item">
-        <div class="position-relative border border-neutral-200 rounded overflow-hidden">
+        <div class="position-relative border border-neutral-200 rounded-4 overflow-hidden">
           <a href="index-10.html" class="d-block">
-            <img src="assets/images/thumbs/home-img3.png" alt="Home Page Image"
-              class="mega-menu__img w-100">
+            <img src="assets/images/thumbs/home-img3.png" alt="Home Page Image" class="mega-menu__img w-100">
           </a>
           <div class="d-lg-flex d-none">
             <div
@@ -411,18 +385,16 @@
           </div>
         </div>
         <div class="tw-mt-4 text-center">
-          <a href="index-10.html"
-            class="mega-menu__link fw-semibold text-capitalize mt-2">Creative
+          <a href="index-10.html" class="mega-menu__link fw-semibold text-capitalize mt-2">Creative
             Agency</a>
         </div>
       </div>
     </div>
     <div class="col">
       <div class="mega-menu-item group-item">
-        <div class="position-relative border border-neutral-200 rounded overflow-hidden">
+        <div class="position-relative border border-neutral-200 rounded-4 overflow-hidden">
           <a href="index-11.html" class="d-block">
-            <img src="assets/images/thumbs/home-img4.png" alt="Home Page Image"
-              class="mega-menu__img w-100">
+            <img src="assets/images/thumbs/home-img4.png" alt="Home Page Image" class="mega-menu__img w-100">
           </a>
           <div class="d-lg-flex d-none">
             <div
@@ -440,18 +412,16 @@
           </div>
         </div>
         <div class="tw-mt-4 text-center">
-          <a href="index-11.html"
-            class="mega-menu__link fw-semibold text-capitalize mt-2">Corporate
+          <a href="index-11.html" class="mega-menu__link fw-semibold text-capitalize mt-2">Corporate
             Agency</a>
         </div>
       </div>
     </div>
     <div class="col">
       <div class="mega-menu-item group-item">
-        <div class="position-relative border border-neutral-200 rounded overflow-hidden">
+        <div class="position-relative border border-neutral-200 rounded-4 overflow-hidden">
           <a href="index-11.html" class="d-block">
-            <img src="assets/images/thumbs/home-img1.png" alt="Home Page Image"
-              class="mega-menu__img w-100">
+            <img src="assets/images/thumbs/home-img1.png" alt="Home Page Image" class="mega-menu__img w-100">
           </a>
           <div class="d-lg-flex d-none">
             <div
@@ -469,18 +439,16 @@
           </div>
         </div>
         <div class="tw-mt-4 text-center">
-          <a href="index-11.html"
-            class="mega-menu__link fw-semibold text-capitalize mt-2">Creative
+          <a href="index-11.html" class="mega-menu__link fw-semibold text-capitalize mt-2">Creative
             Agency</a>
         </div>
       </div>
     </div>
     <div class="col">
       <div class="mega-menu-item group-item">
-        <div class="position-relative border border-neutral-200 rounded overflow-hidden">
+        <div class="position-relative border border-neutral-200 rounded-4 overflow-hidden">
           <span class="d-block">
-            <img src="assets/images/thumbs/coming-soon-img.png" alt="Home Page Image"
-              class="mega-menu__img">
+            <img src="assets/images/thumbs/coming-soon-img.png" alt="Home Page Image" class="mega-menu__img">
           </span>
         </div>
         <div class="tw-mt-4 text-center">
@@ -494,54 +462,44 @@
   </li>
   <li class="nav-menu__item has-submenu position-relative">
     <a href="javascript:void(0)" class="nav-menu__link">Pages</a>
-    <ul
-      class="nav-submenu scroll-sm position-absolute start-0 top-100 bg-white overflow-hidden p-2">
+    <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 bg-white overflow-hidden p-2">
       <li class="nav-submenu__item d-block position-relative">
-        <a href="#"
-          class="nav-submenu__link fw-medium d-flex py-2 px-3">
+        <a href="#" class="nav-submenu__link fw-medium d-flex py-2 px-3">
           Property</a>
       </li>
       <li class="nav-submenu__item d-block position-relative">
-        <a href="#"
-          class="nav-submenu__link fw-medium d-flex py-2 px-3">
+        <a href="#" class="nav-submenu__link fw-medium d-flex py-2 px-3">
           About Us</a>
       </li>
       <li class="nav-submenu__item d-block position-relative">
-        <a href="#"
-          class="nav-submenu__link fw-medium d-flex py-2 px-3">
+        <a href="#" class="nav-submenu__link fw-medium d-flex py-2 px-3">
           FAQ</a>
       </li>
     </ul>
   </li>
   <li class="nav-menu__item has-submenu position-relative">
     <a href="javascript:void(0)" class="nav-menu__link">Project</a>
-    <ul
-      class="nav-submenu scroll-sm position-absolute start-0 top-100 bg-white overflow-hidden p-2">
+    <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 bg-white overflow-hidden p-2">
       <li class="nav-submenu__item d-block position-relative">
-        <a href="#"
-          class="nav-submenu__link fw-medium d-flex py-2 px-3">
+        <a href="#" class="nav-submenu__link fw-medium d-flex py-2 px-3">
           Project
         </a>
       </li>
       <li class="nav-submenu__item d-block position-relative">
-        <a href="#"
-          class="nav-submenu__link fw-medium d-flex py-2 px-3">Project
+        <a href="#" class="nav-submenu__link fw-medium d-flex py-2 px-3">Project
           Details</a>
       </li>
     </ul>
   </li>
   <li class="nav-menu__item has-submenu position-relative">
     <a href="javascript:void(0)" class="nav-menu__link">Blog</a>
-    <ul
-      class="nav-submenu scroll-sm position-absolute start-0 top-100 bg-white overflow-hidden p-2">
+    <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 bg-white overflow-hidden p-2">
       <li class="nav-submenu__item d-block position-relative">
-        <a href="#"
-          class="nav-submenu__link fw-medium d-flex py-2 px-3">
+        <a href="#" class="nav-submenu__link fw-medium d-flex py-2 px-3">
           Blog Classic</a>
       </li>
       <li class="nav-submenu__item d-block position-relative">
-        <a href="#"
-          class="nav-submenu__link fw-medium d-flex py-2 px-3">
+        <a href="#" class="nav-submenu__link fw-medium d-flex py-2 px-3">
           Blog Details</a>
       </li>
     </ul>
@@ -559,7 +517,7 @@
 <div id="smooth-wrapper">
 
     <!-- ==================== Header Start Here ==================== -->
-<header class="header bg-neutral-100 tw-transition-all tw-z-99">
+<header class="header bg-neutral-100">
   <div class="container container-two">
     <nav class="d-flex align-items-center justify-content-between position-relative">
       <!-- Logo Start -->
@@ -578,15 +536,13 @@
     <a href="javascript:void(0)" class="nav-menu__link">Home</a>
 
     <!-- mega menu start -->
-<div
-  class="mega-menu scroll-sm nav-submenu position-absolute start-0 top-100 tw-w-max bg-white">
+<div class="mega-menu scroll-sm nav-submenu position-absolute start-0 top-100 tw-w-max bg-white">
   <div class="row g-4 row-cols-1 row-cols-lg-3 row-cols-xl-4">
     <div class="col">
       <div class="mega-menu-item group-item">
-        <div class="position-relative border border-neutral-200 rounded overflow-hidden">
+        <div class="position-relative border border-neutral-200 rounded-4 overflow-hidden">
           <a href="index.html" class="d-block">
-            <img src="assets/images/thumbs/home-img1.png" alt="Home Page Image"
-              class="mega-menu__img w-100">
+            <img src="assets/images/thumbs/home-img1.png" alt="Home Page Image" class="mega-menu__img w-100">
           </a>
           <div class="d-lg-flex d-none">
             <div
@@ -604,17 +560,15 @@
           </div>
         </div>
         <div class="tw-mt-4 text-center">
-          <a href="index.html"
-            class="mega-menu__link fw-semibold text-capitalize mt-2">SEO Agency</a>
+          <a href="index.html" class="mega-menu__link fw-semibold text-capitalize mt-2">SEO Agency</a>
         </div>
       </div>
     </div>
     <div class="col">
       <div class="mega-menu-item group-item">
-        <div class="position-relative border border-neutral-200 rounded overflow-hidden">
+        <div class="position-relative border border-neutral-200 rounded-4 overflow-hidden">
           <a href="index-2.html" class="d-block">
-            <img src="assets/images/thumbs/home-img2.png" alt="Home Page Image"
-              class="mega-menu__img w-100">
+            <img src="assets/images/thumbs/home-img2.png" alt="Home Page Image" class="mega-menu__img w-100">
           </a>
           <div class="d-lg-flex d-none">
             <div
@@ -632,17 +586,15 @@
           </div>
         </div>
         <div class="tw-mt-4 text-center">
-          <a href="index-2.html"
-            class="mega-menu__link fw-semibold text-capitalize mt-2">Web Hosting</a>
+          <a href="index-2.html" class="mega-menu__link fw-semibold text-capitalize mt-2">Web Hosting</a>
         </div>
       </div>
     </div>
     <div class="col">
       <div class="mega-menu-item group-item">
-        <div class="position-relative border border-neutral-200 rounded overflow-hidden">
+        <div class="position-relative border border-neutral-200 rounded-4 overflow-hidden">
           <a href="index-3.html" class="d-block">
-            <img src="assets/images/thumbs/home-img3.png" alt="Home Page Image"
-              class="mega-menu__img w-100">
+            <img src="assets/images/thumbs/home-img3.png" alt="Home Page Image" class="mega-menu__img w-100">
           </a>
           <div class="d-lg-flex d-none">
             <div
@@ -660,18 +612,16 @@
           </div>
         </div>
         <div class="tw-mt-4 text-center">
-          <a href="index-3.html"
-            class="mega-menu__link fw-semibold text-capitalize mt-2">Task
+          <a href="index-3.html" class="mega-menu__link fw-semibold text-capitalize mt-2">Task
             Management</a>
         </div>
       </div>
     </div>
     <div class="col">
       <div class="mega-menu-item group-item">
-        <div class="position-relative border border-neutral-200 rounded overflow-hidden">
+        <div class="position-relative border border-neutral-200 rounded-4 overflow-hidden">
           <a href="index-4.html" class="d-block">
-            <img src="assets/images/thumbs/home-img4.png" alt="Home Page Image"
-              class="mega-menu__img w-100">
+            <img src="assets/images/thumbs/home-img4.png" alt="Home Page Image" class="mega-menu__img w-100">
           </a>
           <div class="d-lg-flex d-none">
             <div
@@ -689,18 +639,16 @@
           </div>
         </div>
         <div class="tw-mt-4 text-center">
-          <a href="index-4.html"
-            class="mega-menu__link fw-semibold text-capitalize mt-2">CRM
+          <a href="index-4.html" class="mega-menu__link fw-semibold text-capitalize mt-2">CRM
             Software</a>
         </div>
       </div>
     </div>
     <div class="col">
       <div class="mega-menu-item group-item">
-        <div class="position-relative border border-neutral-200 rounded overflow-hidden">
+        <div class="position-relative border border-neutral-200 rounded-4 overflow-hidden">
           <a href="index-5.html" class="d-block">
-            <img src="assets/images/thumbs/home-img5.png" alt="Home Page Image"
-              class="mega-menu__img w-100">
+            <img src="assets/images/thumbs/home-img5.png" alt="Home Page Image" class="mega-menu__img w-100">
           </a>
           <div class="d-lg-flex d-none">
             <div
@@ -718,17 +666,15 @@
           </div>
         </div>
         <div class="tw-mt-4 text-center">
-          <a href="index-5.html"
-            class="mega-menu__link fw-semibold text-capitalize mt-2">App Landing</a>
+          <a href="index-5.html" class="mega-menu__link fw-semibold text-capitalize mt-2">App Landing</a>
         </div>
       </div>
     </div>
     <div class="col">
       <div class="mega-menu-item group-item">
-        <div class="position-relative border border-neutral-200 rounded overflow-hidden">
+        <div class="position-relative border border-neutral-200 rounded-4 overflow-hidden">
           <a href="index-6.html" class="d-block">
-            <img src="assets/images/thumbs/home-img6.png" alt="Home Page Image"
-              class="mega-menu__img w-100">
+            <img src="assets/images/thumbs/home-img6.png" alt="Home Page Image" class="mega-menu__img w-100">
           </a>
           <div class="d-lg-flex d-none">
             <div
@@ -746,18 +692,16 @@
           </div>
         </div>
         <div class="tw-mt-4 text-center">
-          <a href="index-6.html"
-            class="mega-menu__link fw-semibold text-capitalize mt-2">Consulting
+          <a href="index-6.html" class="mega-menu__link fw-semibold text-capitalize mt-2">Consulting
             Agency</a>
         </div>
       </div>
     </div>
     <div class="col">
       <div class="mega-menu-item group-item">
-        <div class="position-relative border border-neutral-200 rounded overflow-hidden">
+        <div class="position-relative border border-neutral-200 rounded-4 overflow-hidden">
           <a href="index-7.html" class="d-block">
-            <img src="assets/images/thumbs/home-img7.png" alt="Home Page Image"
-              class="mega-menu__img w-100">
+            <img src="assets/images/thumbs/home-img7.png" alt="Home Page Image" class="mega-menu__img w-100">
           </a>
           <div class="d-lg-flex d-none">
             <div
@@ -775,18 +719,16 @@
           </div>
         </div>
         <div class="tw-mt-4 text-center">
-          <a href="index-7.html"
-            class="mega-menu__link fw-semibold text-capitalize mt-2">Advertising
+          <a href="index-7.html" class="mega-menu__link fw-semibold text-capitalize mt-2">Advertising
             Agency</a>
         </div>
       </div>
     </div>
     <div class="col">
       <div class="mega-menu-item group-item">
-        <div class="position-relative border border-neutral-200 rounded overflow-hidden">
+        <div class="position-relative border border-neutral-200 rounded-4 overflow-hidden">
           <a href="index-8.html" class="d-block">
-            <img src="assets/images/thumbs/home-img8.png" alt="Home Page Image"
-              class="mega-menu__img w-100">
+            <img src="assets/images/thumbs/home-img8.png" alt="Home Page Image" class="mega-menu__img w-100">
           </a>
           <div class="d-lg-flex d-none">
             <div
@@ -804,18 +746,16 @@
           </div>
         </div>
         <div class="tw-mt-4 text-center">
-          <a href="index-8.html"
-            class="mega-menu__link fw-semibold text-capitalize mt-2">Statup
+          <a href="index-8.html" class="mega-menu__link fw-semibold text-capitalize mt-2">Statup
             Agency</a>
         </div>
       </div>
     </div>
     <div class="col">
       <div class="mega-menu-item group-item">
-        <div class="position-relative border border-neutral-200 rounded overflow-hidden">
+        <div class="position-relative border border-neutral-200 rounded-4 overflow-hidden">
           <a href="index-9.html" class="d-block">
-            <img src="assets/images/thumbs/home-img2.png" alt="Home Page Image"
-              class="mega-menu__img w-100">
+            <img src="assets/images/thumbs/home-img2.png" alt="Home Page Image" class="mega-menu__img w-100">
           </a>
           <div class="d-lg-flex d-none">
             <div
@@ -833,18 +773,16 @@
           </div>
         </div>
         <div class="tw-mt-4 text-center">
-          <a href="index-9.html"
-            class="mega-menu__link fw-semibold text-capitalize mt-2">Corporate
+          <a href="index-9.html" class="mega-menu__link fw-semibold text-capitalize mt-2">Corporate
             Agency</a>
         </div>
       </div>
     </div>
     <div class="col">
       <div class="mega-menu-item group-item">
-        <div class="position-relative border border-neutral-200 rounded overflow-hidden">
+        <div class="position-relative border border-neutral-200 rounded-4 overflow-hidden">
           <a href="index-10.html" class="d-block">
-            <img src="assets/images/thumbs/home-img3.png" alt="Home Page Image"
-              class="mega-menu__img w-100">
+            <img src="assets/images/thumbs/home-img3.png" alt="Home Page Image" class="mega-menu__img w-100">
           </a>
           <div class="d-lg-flex d-none">
             <div
@@ -862,18 +800,16 @@
           </div>
         </div>
         <div class="tw-mt-4 text-center">
-          <a href="index-10.html"
-            class="mega-menu__link fw-semibold text-capitalize mt-2">Creative
+          <a href="index-10.html" class="mega-menu__link fw-semibold text-capitalize mt-2">Creative
             Agency</a>
         </div>
       </div>
     </div>
     <div class="col">
       <div class="mega-menu-item group-item">
-        <div class="position-relative border border-neutral-200 rounded overflow-hidden">
+        <div class="position-relative border border-neutral-200 rounded-4 overflow-hidden">
           <a href="index-11.html" class="d-block">
-            <img src="assets/images/thumbs/home-img4.png" alt="Home Page Image"
-              class="mega-menu__img w-100">
+            <img src="assets/images/thumbs/home-img4.png" alt="Home Page Image" class="mega-menu__img w-100">
           </a>
           <div class="d-lg-flex d-none">
             <div
@@ -891,18 +827,16 @@
           </div>
         </div>
         <div class="tw-mt-4 text-center">
-          <a href="index-11.html"
-            class="mega-menu__link fw-semibold text-capitalize mt-2">Corporate
+          <a href="index-11.html" class="mega-menu__link fw-semibold text-capitalize mt-2">Corporate
             Agency</a>
         </div>
       </div>
     </div>
     <div class="col">
       <div class="mega-menu-item group-item">
-        <div class="position-relative border border-neutral-200 rounded overflow-hidden">
+        <div class="position-relative border border-neutral-200 rounded-4 overflow-hidden">
           <a href="index-11.html" class="d-block">
-            <img src="assets/images/thumbs/home-img1.png" alt="Home Page Image"
-              class="mega-menu__img w-100">
+            <img src="assets/images/thumbs/home-img1.png" alt="Home Page Image" class="mega-menu__img w-100">
           </a>
           <div class="d-lg-flex d-none">
             <div
@@ -920,18 +854,16 @@
           </div>
         </div>
         <div class="tw-mt-4 text-center">
-          <a href="index-11.html"
-            class="mega-menu__link fw-semibold text-capitalize mt-2">Creative
+          <a href="index-11.html" class="mega-menu__link fw-semibold text-capitalize mt-2">Creative
             Agency</a>
         </div>
       </div>
     </div>
     <div class="col">
       <div class="mega-menu-item group-item">
-        <div class="position-relative border border-neutral-200 rounded overflow-hidden">
+        <div class="position-relative border border-neutral-200 rounded-4 overflow-hidden">
           <span class="d-block">
-            <img src="assets/images/thumbs/coming-soon-img.png" alt="Home Page Image"
-              class="mega-menu__img">
+            <img src="assets/images/thumbs/coming-soon-img.png" alt="Home Page Image" class="mega-menu__img">
           </span>
         </div>
         <div class="tw-mt-4 text-center">
@@ -945,54 +877,44 @@
   </li>
   <li class="nav-menu__item has-submenu position-relative">
     <a href="javascript:void(0)" class="nav-menu__link">Pages</a>
-    <ul
-      class="nav-submenu scroll-sm position-absolute start-0 top-100 bg-white overflow-hidden p-2">
+    <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 bg-white overflow-hidden p-2">
       <li class="nav-submenu__item d-block position-relative">
-        <a href="#"
-          class="nav-submenu__link fw-medium d-flex py-2 px-3">
+        <a href="#" class="nav-submenu__link fw-medium d-flex py-2 px-3">
           Property</a>
       </li>
       <li class="nav-submenu__item d-block position-relative">
-        <a href="#"
-          class="nav-submenu__link fw-medium d-flex py-2 px-3">
+        <a href="#" class="nav-submenu__link fw-medium d-flex py-2 px-3">
           About Us</a>
       </li>
       <li class="nav-submenu__item d-block position-relative">
-        <a href="#"
-          class="nav-submenu__link fw-medium d-flex py-2 px-3">
+        <a href="#" class="nav-submenu__link fw-medium d-flex py-2 px-3">
           FAQ</a>
       </li>
     </ul>
   </li>
   <li class="nav-menu__item has-submenu position-relative">
     <a href="javascript:void(0)" class="nav-menu__link">Project</a>
-    <ul
-      class="nav-submenu scroll-sm position-absolute start-0 top-100 bg-white overflow-hidden p-2">
+    <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 bg-white overflow-hidden p-2">
       <li class="nav-submenu__item d-block position-relative">
-        <a href="#"
-          class="nav-submenu__link fw-medium d-flex py-2 px-3">
+        <a href="#" class="nav-submenu__link fw-medium d-flex py-2 px-3">
           Project
         </a>
       </li>
       <li class="nav-submenu__item d-block position-relative">
-        <a href="#"
-          class="nav-submenu__link fw-medium d-flex py-2 px-3">Project
+        <a href="#" class="nav-submenu__link fw-medium d-flex py-2 px-3">Project
           Details</a>
       </li>
     </ul>
   </li>
   <li class="nav-menu__item has-submenu position-relative">
     <a href="javascript:void(0)" class="nav-menu__link">Blog</a>
-    <ul
-      class="nav-submenu scroll-sm position-absolute start-0 top-100 bg-white overflow-hidden p-2">
+    <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 bg-white overflow-hidden p-2">
       <li class="nav-submenu__item d-block position-relative">
-        <a href="#"
-          class="nav-submenu__link fw-medium d-flex py-2 px-3">
+        <a href="#" class="nav-submenu__link fw-medium d-flex py-2 px-3">
           Blog Classic</a>
       </li>
       <li class="nav-submenu__item d-block position-relative">
-        <a href="#"
-          class="nav-submenu__link fw-medium d-flex py-2 px-3">
+        <a href="#" class="nav-submenu__link fw-medium d-flex py-2 px-3">
           Blog Details</a>
       </li>
     </ul>
@@ -1030,18 +952,6 @@
 
         <div class="">
             <div class="container my-5">
-                <div class="">
-                    <a href="#"
-                        class="btn btn-main hover-style-one button--stroke active-scale-094 tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2"
-                        data-block="button">
-                        <span class="button__flair"></span>
-                        <span class="button__label">View services</span>
-                        <span
-                            class="tw-w-7 tw-h-7 bg-white text-main-600 tw-text-sm tw-rounded d-flex justify-content-center align-items-center position-relative group-hover-bg-main-600 group-hover-text-white tw-duration-500">
-                            <i class="ph-bold ph-check"></i>
-                        </span>
-                    </a>
-                </div>
                 <div class="">
                     <h2 class="cursor-big splitTextStyleOne my-5 fw-semibold">This starter pack created by <br> Front
                         End Developer
