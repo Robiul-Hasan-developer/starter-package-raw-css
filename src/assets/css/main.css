@@ -1659,9 +1659,13 @@ input:focus, input:focus-visible {
 }
 
 .settings-panel__button {
-    background-color: var(--main-100);
+    background-color: var(--main-50);
     color: var(--main-600);
     transition: 0.5s;
+}
+
+.settings-panel__button:hover {
+    background-color: var(--main-100);
 }
 
 .settings-panel__button.active {

@@ -66,9 +66,12 @@
 }
 
 .settings-panel__button {
-  background-color: var(--main-100);
+  background-color: var(--main-50);
   color: var(--main-600);
   transition: .5s;
+  &:hover {
+    background-color: var(--main-100);
+  }
 }
 
 .settings-panel__button.active {
